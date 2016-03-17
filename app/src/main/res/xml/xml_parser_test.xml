@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <anyitem name="tt" value="10" anykey="anyvalue">test</anyitem>
+    <index name="tt" value="10" android:alpha="@dimen/alpha_value">@string/app_name</index>
+    <map name="mm" value="12" android:alpha="0.5"></map>
+
+</root>

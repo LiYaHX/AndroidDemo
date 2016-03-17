@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <item name="alpha_value" type="dimen" format="float">0.5</item>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="small_margin">5dp</dimen>
+    <dimen name="normal_margin">10dp</dimen>
+    <dimen name="large_margin">15dp</dimen>
+
+    <dimen name="small_padding">5dp</dimen>
+    <dimen name="normal_padding">10dp</dimen>
+    <dimen name="large_padding">15dp</dimen>
+
+</resources>

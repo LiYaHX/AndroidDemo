@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">AndroidDemo</string>
+
+    <string name="str_xml_parse">解析XML</string>
+</resources>
