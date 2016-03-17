@@ -3,23 +3,21 @@ package com.robinlee.xmlparser;
 import android.app.Activity;
 import android.os.Bundle;
 import android.util.AttributeSet;
-import android.util.Log;
 import android.util.Xml;
 import android.widget.TextView;
-
 import org.xmlpull.v1.XmlPullParser;
 import org.xmlpull.v1.XmlPullParserException;
-
 import com.robinlee.androiddemo.R;
-
 import java.io.IOException;
 
 /**
- * Created by robinlee on 3/16/16.
+ * Verify the class 'AttributeSet' some functions, for example: getAttributeNameResource(int index)
+ * and so on.
+ *
+ * @author RobinLee
+ * @since  3/16/16
  */
 public class XmlParserActivity extends Activity{
-
-    private static final String TAG = XmlParserActivity.class.getSimpleName();
 
     private StringBuffer mStrXmlParserRst = new StringBuffer();
     private TextView mTextViewParser;
