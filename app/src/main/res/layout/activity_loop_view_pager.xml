@@ -1,31 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
 
-
+    <!--
+    <com.robinlee.widget.RLSwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.robinlee.widget.RLSwipeRefreshLayout>
+    -->
     <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
-
 
         <com.robinlee.widget.LoopViewPager
             android:id="@+id/mLoopViewPager"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:ratio="1.5"
-            app:flag_is_auto_schedule_play="true" />
+            app:flag_is_auto_schedule_play="true"
+            app:ratio="1.5" />
 
         <com.robinlee.widget.LoopIndicator
             android:id="@+id/mLoopIndicator"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|center_horizontal"
-            app:item_padding="@dimen/small_padding"
-            app:container_padding="@dimen/small_padding"/>
+            app:container_padding="@dimen/small_padding"
+            app:item_padding="@dimen/small_padding" />
 
     </FrameLayout>
-
 
 </LinearLayout>

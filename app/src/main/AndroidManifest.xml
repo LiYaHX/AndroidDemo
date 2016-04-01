@@ -16,11 +16,14 @@
             </intent-filter>
         </activity>
         <activity android:name="com.robinlee.xmlparser.XmlParserActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity android:name="com.robinlee.widget.ShimmerActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity android:name="com.robinlee.widget.LoopViewPagerActivity"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
+        <activity android:name="com.robinlee.widget.BottomNavigationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme"/>
     </application>
 
 </manifest>

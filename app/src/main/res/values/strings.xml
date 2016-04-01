@@ -1,8 +1,11 @@
 <resources>
+
     <string name="app_name">AndroidDemo</string>
 
     <string name="str_xml_parse">解析XML</string>
     <string name="str_shimmer">SHIMMER</string>
     <string name="str_zh_cn_shimmer">字体发光</string>
     <string name="str_loop_view_pager">LOOP_BANNER</string>
+    <string name="str_bottom_navigation">BOTTOM_NAVIGATION</string>
+
 </resources>
