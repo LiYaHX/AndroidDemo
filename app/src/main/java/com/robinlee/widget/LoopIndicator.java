@@ -7,7 +7,6 @@ import android.util.Log;
 import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
-
 import com.robinlee.androiddemo.BuildConfig;
 import com.robinlee.androiddemo.R;
 

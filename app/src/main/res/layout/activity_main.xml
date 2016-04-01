@@ -9,39 +9,11 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.robinlee.androiddemo.MainActivity">
 
-    <ScrollView
+    <ListView
+        android:id="@+id/mListViewDemosList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <Button
-                android:id="@+id/mBtnXmlParser"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/str_xml_parse"
-                android:layout_margin="@dimen/small_margin"
-                android:padding="@dimen/normal_margin" />
-
-            <Button
-                android:id="@+id/mBtnShimmer"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/str_shimmer"
-                android:layout_margin="@dimen/small_margin"
-                android:padding="@dimen/normal_margin" />
-
-            <Button
-                android:id="@+id/mBtnLoopViewPager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/str_loop_view_pager"
-                android:layout_margin="@dimen/small_margin"
-                android:padding="@dimen/normal_margin" />
-        </LinearLayout>
-    </ScrollView>
+        android:layout_height="match_parent"
+        android:cacheColorHint="#FFFFFFFF"
+        android:divider="@null"/>
 
 </LinearLayout>

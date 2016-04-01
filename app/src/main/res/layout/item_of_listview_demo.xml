@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/mBtnDemoItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/str_xml_parse"
+        android:layout_margin="@dimen/small_margin"
+        android:padding="@dimen/normal_margin" />
+
+</LinearLayout>
