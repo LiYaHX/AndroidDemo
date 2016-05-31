@@ -11,19 +11,29 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.robinlee.xmlparser.XmlParserActivity"
+        <activity
+            android:name="com.robinlee.xmlparser.XmlParserActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.robinlee.widget.ShimmerActivity"
+        <activity
+            android:name="com.robinlee.widget.ShimmerActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.robinlee.widget.LoopViewPagerActivity"
+        <activity
+            android:name="com.robinlee.widget.LoopViewPagerActivity"
             android:screenOrientation="portrait" />
-        <activity android:name="com.robinlee.widget.BottomNavigationActivity"
+        <activity
+            android:name="com.robinlee.widget.BottomNavigationActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".SearchViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name="com.robinlee.widget.TimePickerActivity"
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>

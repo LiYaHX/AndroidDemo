@@ -7,6 +7,7 @@ import android.widget.ListView;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
 import com.robinlee.widget.ShimmerActivity;
+import com.robinlee.widget.TimePickerActivity;
 import com.robinlee.xmlparser.XmlParserActivity;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -36,10 +37,16 @@ public class MainActivity extends AppCompatActivity {
         loopViewPagerDemo.put(getResources().getString(R.string.str_loop_view_pager), LoopViewPagerActivity.class);
         HashMap<String, Class> bottomNavigationDemo = new HashMap<String, Class>();
         bottomNavigationDemo.put(getResources().getString(R.string.str_bottom_navigation), BottomNavigationActivity.class);
+        HashMap<String, Class> mSearchDemo = new HashMap<String, Class>();
+        mSearchDemo.put(getResources().getString(R.string.str_search_view), SearchViewActivity.class);
+        HashMap<String, Class> mTimePickerDemo = new HashMap<String, Class>();
+        mTimePickerDemo.put(getResources().getString(R.string.str_time_picker), TimePickerActivity.class);
         demos.add(xmlParseDemo);
         demos.add(shimmerParseDemo);
         demos.add(loopViewPagerDemo);
         demos.add(bottomNavigationDemo);
+        demos.add(mSearchDemo);
+        demos.add(mTimePickerDemo);
 
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }

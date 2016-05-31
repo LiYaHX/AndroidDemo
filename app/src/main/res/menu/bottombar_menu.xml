@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/bottomBarItemOne"
+        android:icon="@drawable/ic_camera_alt_black_18dp"
+        android:title="Camera"/>
 
+    <item
+        android:id="@+id/bottomBarItemTwo"
+        android:icon="@drawable/ic_camera_black_18dp"
+        android:title="Album"/>
 
+    <item
+        android:id="@+id/bottomBarItemThree"
+        android:icon="@drawable/ic_palette_black_18dp"
+        android:title="Paint"/>
+
+    <item
+        android:id="@+id/bottomBarItemFour"
+        android:icon="@drawable/ic_remove_red_eye_black_18dp"
+        android:title="Video"/>
 </menu>
