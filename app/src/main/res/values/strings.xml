@@ -7,5 +7,7 @@
     <string name="str_zh_cn_shimmer">字体发光</string>
     <string name="str_loop_view_pager">LOOP_BANNER</string>
     <string name="str_bottom_navigation">BOTTOM_NAVIGATION</string>
+    <string name="str_search_view">SEARCH_VIEW</string>
+    <string name="str_time_picker">时间选择组件</string>
 
 </resources>
