@@ -9,5 +9,6 @@
     <string name="str_bottom_navigation">BOTTOM_NAVIGATION</string>
     <string name="str_search_view">SEARCH_VIEW</string>
     <string name="str_time_picker">时间选择组件</string>
+    <string name="str_time_selector">类iOS滚轮时间选择器</string>
 
 </resources>

@@ -1,19 +1,17 @@
 package com.robinlee.widget;
 
-import android.app.Activity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.view.View;
-
+import com.robinlee.androiddemo.BaseActivity;
 import com.robinlee.androiddemo.R;
-
 import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by robinlee on 3/24/16.
+ * Created by RobinLee on 3/24/16.
  */
-public class LoopViewPagerActivity extends Activity {
+public class LoopViewPagerActivity extends BaseActivity {
 
     private LoopViewPager mLoopViewPager;
     private LoopIndicator mLoopIndicator;

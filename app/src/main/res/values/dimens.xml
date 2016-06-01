@@ -19,4 +19,8 @@
     <dimen name="active_text_size">14sp</dimen>
     <dimen name="inactivie_text_size">16sp</dimen>
 
+    <!-- Animation -->
+    <integer name="activity_animation_time">300</integer>
+    <integer name="dialog_animation_time">300</integer>
+
 </resources>
