@@ -1,6 +1,7 @@
 package com.robinlee.widget;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
@@ -10,6 +11,7 @@ import android.widget.ImageView;
 
 import com.robinlee.androiddemo.BuildConfig;
 import com.robinlee.androiddemo.R;
+import com.robinlee.androiddemo.SearchViewActivity;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ import java.util.List;
  * @author RobinLee
  * @version 1.2
  */
-public class LoopPagerAdapter extends PagerAdapter {
+public class LoopPagerAdapter extends PagerAdapter implements View.OnClickListener{
 
     private Context mContext;
     private List<String> mList = new ArrayList<String>();
@@ -50,10 +52,16 @@ public class LoopPagerAdapter extends PagerAdapter {
         }
 
         View item = View.inflate(mContext, R.layout.item_of_home_banner, null);
+        item.setOnClickListener(this);
         ImageView imgView = (ImageView) item.findViewById(R.id.mImgViewBannerItem);
         imgView.setImageResource(R.drawable.ic_loop_1 + position);
         container.addView(item, 0);
         return item;
+    }
+
+    @Override
+    public void onClick(View v) {
+        mContext.startActivity(new Intent(mContext, SearchViewActivity.class));     // RobinLee@2016-05-31 经测试不会黑屏
     }
 
     @Override

@@ -8,6 +8,7 @@ import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
 import com.robinlee.widget.ShimmerActivity;
 import com.robinlee.widget.TimePickerActivity;
+import com.robinlee.widget.TimeSelectoriOSActivity;
 import com.robinlee.xmlparser.XmlParserActivity;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -41,12 +42,15 @@ public class MainActivity extends AppCompatActivity {
         mSearchDemo.put(getResources().getString(R.string.str_search_view), SearchViewActivity.class);
         HashMap<String, Class> mTimePickerDemo = new HashMap<String, Class>();
         mTimePickerDemo.put(getResources().getString(R.string.str_time_picker), TimePickerActivity.class);
+        HashMap<String, Class> mTimeSelectorDemo = new HashMap<String, Class>();
+        mTimeSelectorDemo.put(getResources().getString(R.string.str_time_selector), TimeSelectoriOSActivity.class);
         demos.add(xmlParseDemo);
         demos.add(shimmerParseDemo);
         demos.add(loopViewPagerDemo);
         demos.add(bottomNavigationDemo);
         demos.add(mSearchDemo);
         demos.add(mTimePickerDemo);
+        demos.add(mTimeSelectorDemo);
 
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }

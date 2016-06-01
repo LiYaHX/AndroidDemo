@@ -34,6 +34,9 @@
         <activity
             android:name="com.robinlee.widget.TimePickerActivity"
             android:screenOrientation="portrait" />
+        <activity
+            android:name="com.robinlee.widget.TimeSelectoriOSActivity"
+            android:screenOrientation="portrait" />rr
     </application>
 
 </manifest>

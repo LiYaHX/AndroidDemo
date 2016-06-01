@@ -13,7 +13,7 @@ import android.widget.SearchView;
 /**
  * Created by RobinLee on 4/9/16.
  */
-public class SearchViewActivity extends AppCompatActivity {
+public class SearchViewActivity extends BaseActivity {
 
     private SearchView mSearchView;
 
