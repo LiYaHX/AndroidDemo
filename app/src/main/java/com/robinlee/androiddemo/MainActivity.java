@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.widget.ListView;
 
 import com.robinlee.widget.BottomNavigationActivity;
+import com.robinlee.widget.CopyAndPasteTextViewActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
 import com.robinlee.widget.ShimmerActivity;
 import com.robinlee.widget.TimePickerActivity;
@@ -44,6 +45,8 @@ public class MainActivity extends AppCompatActivity {
         mTimePickerDemo.put(getResources().getString(R.string.str_time_picker), TimePickerActivity.class);
         HashMap<String, Class> mTimeSelectorDemo = new HashMap<String, Class>();
         mTimeSelectorDemo.put(getResources().getString(R.string.str_time_selector), TimeSelectoriOSActivity.class);
+        HashMap<String, Class> mCopyAndPasteTextViewDemo = new HashMap<String, Class>();
+        mCopyAndPasteTextViewDemo.put(getResources().getString(R.string.str_copy_and_paste_textview), CopyAndPasteTextViewActivity.class);
         demos.add(xmlParseDemo);
         demos.add(shimmerParseDemo);
         demos.add(loopViewPagerDemo);
@@ -51,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add(mSearchDemo);
         demos.add(mTimePickerDemo);
         demos.add(mTimeSelectorDemo);
+        demos.add(mCopyAndPasteTextViewDemo);
 
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
