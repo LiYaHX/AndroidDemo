@@ -36,7 +36,12 @@
             android:screenOrientation="portrait" />
         <activity
             android:name="com.robinlee.widget.TimeSelectoriOSActivity"
-            android:screenOrientation="portrait" />rr
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.robinlee.widget.CopyAndPasteTextViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NBTranslucentDecorActivityStyle"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>
