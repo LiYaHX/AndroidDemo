@@ -7,7 +7,10 @@
         android:id="@+id/mBtnDemoItem"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/str_xml_parse"
+        android:gravity="center_vertical|left"
+        android:text="@string/str_title_xml_parse"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/transparent"
         android:layout_margin="@dimen/small_margin"
         android:padding="@dimen/normal_margin" />
 

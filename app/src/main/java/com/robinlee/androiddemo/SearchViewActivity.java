@@ -20,15 +20,15 @@ public class SearchViewActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_search_view);
-//        initView();
+        setContentView(R.layout.activity_search_view);
+        initView();
     }
 
     private void initView(){
-//        mSearchView = (SearchView) this.findViewById(R.id.mSearchView);
-//        int searchBarId = mSearchView.getContext().getResources().getIdentifier("android:id/search_edit_frame", null, null);
-//        LinearLayout editSearchView = (LinearLayout) mSearchView.findViewById(searchBarId);
-//        editSearchView.setLayoutTransition(new LayoutTransition());
+        mSearchView = (SearchView) this.findViewById(R.id.mSearchView);
+        int searchBarId = mSearchView.getContext().getResources().getIdentifier("android:id/search_edit_frame", null, null);
+        LinearLayout editSearchView = (LinearLayout) mSearchView.findViewById(searchBarId);
+        editSearchView.setLayoutTransition(new LayoutTransition());
     }
 
     @Override
@@ -36,9 +36,9 @@ public class SearchViewActivity extends BaseActivity {
         getMenuInflater().inflate(R.menu.search_view_menu, menu);
 
         MenuItem searchViewItem = menu.findItem(R.id.menu_search);
-//        SearchView searchView = (SearchView) searchViewItem.getActionView();
-////        [...]
-//        searchView.setIconifiedByDefault(false);
+        SearchView searchView = (SearchView) searchViewItem.getActionView();
+//        [...]
+        searchView.setIconifiedByDefault(false);
 
         return true;
     }

@@ -2,14 +2,25 @@
 
     <string name="app_name">AndroidDemo</string>
 
-    <string name="str_xml_parse">解析XML</string>
-    <string name="str_shimmer">SHIMMER</string>
-    <string name="str_zh_cn_shimmer">字体发光</string>
-    <string name="str_loop_view_pager">LOOP_BANNER</string>
-    <string name="str_bottom_navigation">BOTTOM_NAVIGATION</string>
-    <string name="str_search_view">SEARCH_VIEW</string>
-    <string name="str_time_picker">时间选择组件</string>
-    <string name="str_time_selector">类iOS滚轮时间选择器</string>
-    <string name="str_copy_and_paste_textview">自由复制粘帖TextView</string>
+    <string name="str_title_xml_parse">解析XML</string>
+    <string name="str_title_shimmer">SHIMMER</string>
+    <string name="str_title_zh_cn_shimmer">字体发光</string>
+    <string name="str_title_loop_view_pager">LOOP_BANNER</string>
+    <string name="str_title_bottom_navigation">BOTTOM_NAVIGATION</string>
+    <string name="str_title_search_view">SEARCH_VIEW</string>
+    <string name="str_title_time_picker">时间选择组件</string>
+    <string name="str_title_time_selector">类iOS滚轮时间选择器</string>
+    <string name="str_title_copy_and_paste_textview">自由复制粘帖TextView</string>
+    <string name="str_title_material_design_training">MATERIAL_DESIGN_TRAINING</string>
+
+    <!-- Android Material Design -->
+    <string name="content_bottom_sheet">
+
+        According to material design, Bottom Sheets can be of two types: Persistent and Modal. Here in this example we would make samples for both types of Android Bottom sheets. As per documentation persistent bottom sheets are supposed to be in-app content. Hence they are included right inside the main layout. In a way they are supposed to be integrated with the app or screen. On the other hand Modal Bottom sheets are a little different; they are supposed to be used as the layer on top of your app. Mostly they are inferred as an external entity, like a menu. Also since they are like menus, therefore if they are visible to the user, they do not allow the user to interact with main screen in background. First they need to dismiss the Android Bottom Sheet, only then the user would be allowed to interact with main activity. Lets learn more about them in
+
+    </string>
+    <string name="str_title_bottom_sheet">
+        Widget_BottomSheet
+    </string>
 
 </resources>

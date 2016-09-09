@@ -1,9 +1,12 @@
 package com.robinlee.androiddemo;
 
+import android.app.Activity;
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.robinlee.material.design.MaterialDesignActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
@@ -29,50 +32,47 @@ public class MainActivity extends AppCompatActivity {
         initView();
     }
 
-    private void initData() {
+    /**
+     * 2016-09-06
+     *
+     * Wait for testing
+     */
+    private void initData(){
+
         List<HashMap<String, Class>> demos = new ArrayList<HashMap<String, Class>>();
-        HashMap<String, Class> xmlParseDemo = new HashMap<String, Class>();
-        xmlParseDemo.put(getResources().getString(R.string.str_xml_parse), XmlParserActivity.class);
-        HashMap<String, Class> shimmerParseDemo = new HashMap<String, Class>();
-        shimmerParseDemo.put(getResources().getString(R.string.str_shimmer), ShimmerActivity.class);
-        HashMap<String, Class> loopViewPagerDemo = new HashMap<String, Class>();
-        loopViewPagerDemo.put(getResources().getString(R.string.str_loop_view_pager), LoopViewPagerActivity.class);
-        HashMap<String, Class> bottomNavigationDemo = new HashMap<String, Class>();
-        bottomNavigationDemo.put(getResources().getString(R.string.str_bottom_navigation), BottomNavigationActivity.class);
-        HashMap<String, Class> mSearchDemo = new HashMap<String, Class>();
-        mSearchDemo.put(getResources().getString(R.string.str_search_view), SearchViewActivity.class);
-        HashMap<String, Class> mTimePickerDemo = new HashMap<String, Class>();
-        mTimePickerDemo.put(getResources().getString(R.string.str_time_picker), TimePickerActivity.class);
-        HashMap<String, Class> mTimeSelectorDemo = new HashMap<String, Class>();
-        mTimeSelectorDemo.put(getResources().getString(R.string.str_time_selector), TimeSelectoriOSActivity.class);
-        HashMap<String, Class> mCopyAndPasteTextViewDemo = new HashMap<String, Class>();
-        mCopyAndPasteTextViewDemo.put(getResources().getString(R.string.str_copy_and_paste_textview), CopyAndPasteTextViewActivity.class);
-        demos.add(xmlParseDemo);
-        demos.add(shimmerParseDemo);
-        demos.add(loopViewPagerDemo);
-        demos.add(bottomNavigationDemo);
-        demos.add(mSearchDemo);
-        demos.add(mTimePickerDemo);
-        demos.add(mTimeSelectorDemo);
-        demos.add(mCopyAndPasteTextViewDemo);
+
+        Resources resources = getResources();
+        demos.add((HashMap<String, Class>) createTaskItem(resources.getString(R.string.str_title_xml_parse), XmlParserActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_shimmer), ShimmerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_loop_view_pager), LoopViewPagerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_bottom_navigation), BottomNavigationActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_search_view), SearchViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_time_picker), TimePickerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_time_selector), TimeSelectoriOSActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_copy_and_paste_textview), CopyAndPasteTextViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_material_design_training), MaterialDesignActivity.class));
 
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
+    }
+
+    /**
+     * 2016-09-06
+     *
+     * Wait for testing
+     *
+     * @param taskName
+     * @param taskActivity
+     * @return
+     */
+    private HashMap<String, Class> createTaskItem(String taskName, Class taskActivity){
+        HashMap<String, Class> task = new HashMap<String, Class>();
+        task.put(taskName, taskActivity);
+        return task;
     }
 
     private void initView() {
         mListViewDemoList = (ListView) this.findViewById(R.id.mListViewDemosList);
         mListViewDemoList.setAdapter(mDemosAdapter);
-//        mListViewDemoList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
-//            @Override
-//            public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-//
-//            }
-//
-//            @Override
-//            public void onNothingSelected(AdapterView<?> parent) {
-//
-//            }
-//        });
     }
 
 }
