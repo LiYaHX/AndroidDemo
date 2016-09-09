@@ -13,5 +13,5 @@
         android:id="@+id/mBtnTimePickerDialog"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/str_time_picker"/>
+        android:text="@string/str_title_time_picker"/>
 </LinearLayout>

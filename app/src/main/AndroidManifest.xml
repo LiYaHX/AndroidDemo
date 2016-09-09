@@ -42,6 +42,15 @@
             android:screenOrientation="portrait"
             android:theme="@style/NBTranslucentDecorActivityStyle"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.robinlee.material.design.MaterialDesignActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.robinlee.material.design.BottomSheetsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+
     </application>
 
 </manifest>
