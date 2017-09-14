@@ -21,4 +21,9 @@
         <!-- fitSystemWindows default value is false. when is set to true, the windowSoftwareInput is right to show, but false is not -->
         <item name="android:fitsSystemWindows">false</item>
     </style>
+
+    <style name="BtnStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/bb_inActiveBottomBarItemColor</item>
+        <item name="colorButtonNormal">@android:color/holo_blue_dark</item>
+    </style>
 </resources>

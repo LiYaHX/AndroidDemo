@@ -10,7 +10,7 @@ import android.view.View;
 import com.robinlee.androiddemo.R;
 
 /**
- * Created by robinlee on 16/9/6.
+ * Created by RobinLee on 16/9/6.
  */
 public class BottomSheetsActivity extends AppCompatActivity {
 
@@ -27,6 +27,7 @@ public class BottomSheetsActivity extends AppCompatActivity {
 
         View bottomSheet = findViewById(R.id.mNestedScrollView);
         mBottomSheetBehavior = BottomSheetBehavior.from(bottomSheet);
+        mBottomSheetBehavior.setHideable(true);
         mBottomSheetBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {

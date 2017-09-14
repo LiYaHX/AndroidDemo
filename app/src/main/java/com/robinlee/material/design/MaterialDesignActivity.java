@@ -11,7 +11,10 @@ import java.util.HashMap;
 import java.util.List;
 
 /**
- * Created by robinlee on 16/9/6.
+ * Created by RobinLee on 16/9/6.
+ *
+ * Google Android Sample Link : https://github.com/googlesamples?utf8=%E2%9C%93&query=
+ *
  */
 public class MaterialDesignActivity extends AppCompatActivity{
 
@@ -36,6 +39,8 @@ public class MaterialDesignActivity extends AppCompatActivity{
 
         Resources resources = getResources();
         demos.add(createTaskItem(resources.getString(R.string.str_title_bottom_sheet), BottomSheetsActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_button), ButtonActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_text_input_layout), TextInputLayoutActivity.class));
 
         mMaterialDesignDemosAdapter = new DemosAdapter(MaterialDesignActivity.this, demos);
     }

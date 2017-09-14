@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_padding">
+
+        <Button
+            android:id="@+id/btnFloatActionBtn"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            style="@style/Widget.Design.FloatingActionButton"
+            android:text="+"
+            android:textSize="28sp"
+            android:textColor="@android:color/white"/>
+
+        <Button
+            android:id="@+id/btnRaisedBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14dp"
+            android:text="RaisedBtn"/>
+
+        <Button
+            android:id="@+id/btnRaisedBtnColored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:textSize="14dp"
+            android:text="RaisedBtnColored"/>
+
+        <Button
+            android:id="@+id/btnRaisedBtnBorderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:textSize="14dp"
+            android:text="RaisedBtnBorderless"/>
+
+        <Button
+            android:id="@+id/btnRaisedBtnBorderlessColored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            android:textSize="14dp"
+            android:text="RaisedBtnBorderlessColored"/>
+
+        <Button
+            android:id="@+id/btnFlatBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:textSize="14dp"
+            android:text="FlatBtn"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/btnRef1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_toLeftOf="@+id/btnRef2"
+            android:textSize="14dp"
+            android:onClick="openLink"
+            android:text="参考链接一"/>
+
+        <Button
+            android:id="@+id/btnRef2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            style="?android:attr/borderlessButtonStyle"
+            android:onClick="openLink"
+            android:textSize="14dp"
+            android:text="参考链接二"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
