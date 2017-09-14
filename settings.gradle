@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 include ':app', ':lib', ':algorithm'
+=======
+include ':app'
+>>>>>>> 1dee7df1ace596de12831e437078ae16ff958493

@@ -19,6 +19,7 @@
         According to material design, Bottom Sheets can be of two types: Persistent and Modal. Here in this example we would make samples for both types of Android Bottom sheets. As per documentation persistent bottom sheets are supposed to be in-app content. Hence they are included right inside the main layout. In a way they are supposed to be integrated with the app or screen. On the other hand Modal Bottom sheets are a little different; they are supposed to be used as the layer on top of your app. Mostly they are inferred as an external entity, like a menu. Also since they are like menus, therefore if they are visible to the user, they do not allow the user to interact with main screen in background. First they need to dismiss the Android Bottom Sheet, only then the user would be allowed to interact with main activity. Lets learn more about them in
 
     </string>
+<<<<<<< HEAD
     <string name="str_title_bottom_sheet">Widget_BottomSheet</string>
     <string name="str_title_button">Button</string>
     <string name="str_title_text_input_layout">TextInputLayout</string>
@@ -26,5 +27,10 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+=======
+    <string name="str_title_bottom_sheet">
+        Widget_BottomSheet
+    </string>
+>>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
 
 </resources>

@@ -6,7 +6,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.robinlee.material.design.MaterialDesignActivity"
+<<<<<<< HEAD
     android:fitsSystemWindows="false">
+=======
+    android:fitsSystemWindows="true">
+>>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
 
     <LinearLayout
         android:id="@+id/mLLayoutAchor"
@@ -29,11 +33,17 @@
     <android.support.v4.widget.NestedScrollView
         android:id="@+id/mNestedScrollView"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="match_parent"
         android:clipToPadding="true"
         android:background="@android:color/holo_blue_light"
         app:behavior_peekHeight="300dp"
         app:behavior_skipCollapsed="true"
+=======
+        android:layout_height="350dp"
+        android:clipToPadding="true"
+        android:background="@android:color/holo_blue_light"
+>>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
         app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
 
         <TextView

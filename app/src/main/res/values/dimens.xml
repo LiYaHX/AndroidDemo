@@ -1,6 +1,10 @@
 <resources>
     <!-- Default screen margins, per the Android Design guidelines. -->
+<<<<<<< HEAD
     <item name="alpha_value" format="float" type="dimen">0.5</item>
+=======
+    <item name="alpha_value" type="dimen" format="float">0.5</item>
+>>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
 
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
