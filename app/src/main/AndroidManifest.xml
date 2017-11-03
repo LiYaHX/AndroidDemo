@@ -11,10 +11,6 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-<<<<<<< HEAD
-
-=======
->>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -54,7 +50,6 @@
             android:name="com.robinlee.material.design.BottomSheetsActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-<<<<<<< HEAD
         <activity
             android:name="com.robinlee.material.design.ButtonActivity"
             android:screenOrientation="portrait"
@@ -66,9 +61,3 @@
     </application>
 
 </manifest>
-=======
-
-    </application>
-
-</manifest>
->>>>>>> 1dee7df1ace596de12831e437078ae16ff958493

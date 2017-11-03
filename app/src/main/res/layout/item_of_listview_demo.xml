@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-<<<<<<< HEAD
     android:orientation="vertical"
     android:layout_width="match_parent"
-=======
-    android:orientation="vertical" android:layout_width="match_parent"
->>>>>>> 1dee7df1ace596de12831e437078ae16ff958493
     android:layout_height="match_parent">
 
     <Button
