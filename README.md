@@ -1,7 +1,8 @@
 # AndroidDemo
 
-1. LoopViewPager组件在设置Adaper时，容易出现异常。现阶段设置方式：
-  (1)初始化
+##### LoopViewPager组件在设置Adaper时，容易出现异常。现阶段设置方式：
+
+###### （1）初始化
       ```
       private void initView(View view){
         mViewPagerBanner = (LoopViewPager) header.findViewById(R.id.screen_content);
@@ -28,7 +29,7 @@
       }
       ```
 
-    (2)网络获取数据后：
+###### （2）网络获取数据后：
       ```
       @Override
       public void onParsedResponseListener(HashMap<String, Object> stringObjectHashMap) {
@@ -46,9 +47,9 @@
       }
       ```
 
-预期目标：在数据发生变化后，直接调用 ：
-      
+######   预期目标：在数据发生变化后，直接调用如下代码
+
       Adapter.setData(List<Object> newData);
       Adapter.notifyDataSetChanged();
 
-即可
+######   即可
