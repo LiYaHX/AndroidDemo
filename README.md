@@ -47,9 +47,9 @@
       }
       ```
 
-######   预期目标：在数据发生变化后，直接调用如下代码
+#####   预期目标：在数据发生变化后，直接调用如下代码
 
       Adapter.setData(List<Object> newData);
       Adapter.notifyDataSetChanged();
 
-######   即可
+#####   即可
