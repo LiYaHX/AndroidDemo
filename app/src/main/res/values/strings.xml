@@ -12,7 +12,7 @@
     <string name="str_title_time_selector">类iOS滚轮时间选择器</string>
     <string name="str_title_copy_and_paste_textview">自由复制粘帖TextView</string>
     <string name="str_title_material_design_training">MATERIAL_DESIGN_TRAINING</string>
-
+    <string name="str_title_radio_button">单选按钮</string>
     <!-- Android Material Design -->
     <string name="content_bottom_sheet">
 

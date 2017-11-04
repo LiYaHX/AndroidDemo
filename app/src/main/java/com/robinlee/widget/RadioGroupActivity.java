@@ -1,0 +1,15 @@
+package com.robinlee.widget;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+
+import com.robinlee.androiddemo.R;
+
+public class RadioGroupActivity extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_radio_group);
+    }
+}

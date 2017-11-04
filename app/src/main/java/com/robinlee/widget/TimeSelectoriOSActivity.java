@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.Toast;
 import com.robinlee.androiddemo.BaseActivity;
 import com.robinlee.androiddemo.R;
-import org.feezu.liuli.timeselector.TimeSelector;
+//import org.feezu.liuli.timeselector.TimeSelector;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -24,7 +24,7 @@ public class TimeSelectoriOSActivity extends BaseActivity{
     private String mStartTime = DEF_START_TIME;
     private String mEndTime = DEF_END_TIME;
 
-    private TimeSelector mTimeSelector;
+//    private TimeSelector mTimeSelector;
     private Button mBtnStartTime;
     private Button mBtnEndTime;
     private boolean mIsStartTime = true;
@@ -42,7 +42,7 @@ public class TimeSelectoriOSActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 mIsStartTime = true;
-                mTimeSelector.show();
+//                mTimeSelector.show();
             }
         });
         mBtnEndTime = (Button) this.findViewById(R.id.mBtnEndTime);
@@ -50,7 +50,7 @@ public class TimeSelectoriOSActivity extends BaseActivity{
             @Override
             public void onClick(View v) {
                 mIsStartTime = false;
-                mTimeSelector.show();
+//                mTimeSelector.show();
             }
         });
         showTimeSelector();
@@ -58,32 +58,32 @@ public class TimeSelectoriOSActivity extends BaseActivity{
 
     private void showTimeSelector(){
         mStartTime = getCurrentTimeStr();
-        mTimeSelector = new TimeSelector(TimeSelectoriOSActivity.this, new TimeSelector.ResultHandler() {
-            @Override
-            public void handle(String time) {
-                if(mIsStartTime){
-                    mStartTime = time;
-                    Toast.makeText(TimeSelectoriOSActivity.this, time, Toast.LENGTH_SHORT).show();
-                }else{
-                    mEndTime = time;
-                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ENGLISH);
-                    try {
-                        Date startDate = simpleDateFormat.parse(mStartTime);
-                        Date endDate = simpleDateFormat.parse(mEndTime);
-                        long startTime = startDate.getTime();
-                        long endTime = endDate.getTime();
-                        if(startTime > endTime){
-                            Toast.makeText(TimeSelectoriOSActivity.this, "> 错误", Toast.LENGTH_SHORT).show();
-                        }else{
-                            Toast.makeText(TimeSelectoriOSActivity.this, "< 正确", Toast.LENGTH_SHORT).show();
-                        }
-                    }catch (ParseException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }, mStartTime, mEndTime);
-        mTimeSelector.setIsLoop(true);
+//        mTimeSelector = new TimeSelector(TimeSelectoriOSActivity.this, new TimeSelector.ResultHandler() {
+//            @Override
+//            public void handle(String time) {
+//                if(mIsStartTime){
+//                    mStartTime = time;
+//                    Toast.makeText(TimeSelectoriOSActivity.this, time, Toast.LENGTH_SHORT).show();
+//                }else{
+//                    mEndTime = time;
+//                    SimpleDateFormat simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.ENGLISH);
+//                    try {
+//                        Date startDate = simpleDateFormat.parse(mStartTime);
+//                        Date endDate = simpleDateFormat.parse(mEndTime);
+//                        long startTime = startDate.getTime();
+//                        long endTime = endDate.getTime();
+//                        if(startTime > endTime){
+//                            Toast.makeText(TimeSelectoriOSActivity.this, "> 错误", Toast.LENGTH_SHORT).show();
+//                        }else{
+//                            Toast.makeText(TimeSelectoriOSActivity.this, "< 正确", Toast.LENGTH_SHORT).show();
+//                        }
+//                    }catch (ParseException e){
+//                        e.printStackTrace();
+//                    }
+//                }
+//            }
+//        }, mStartTime, mEndTime);
+//        mTimeSelector.setIsLoop(true);
     }
 
     private String getCurrentTimeStr(){

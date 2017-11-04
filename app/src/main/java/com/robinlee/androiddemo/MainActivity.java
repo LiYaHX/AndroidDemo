@@ -10,6 +10,7 @@ import com.robinlee.material.design.MaterialDesignActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
+import com.robinlee.widget.RadioGroupActivity;
 import com.robinlee.widget.ShimmerActivity;
 import com.robinlee.widget.TimePickerActivity;
 import com.robinlee.widget.TimeSelectoriOSActivity;
@@ -50,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add(createTaskItem(resources.getString(R.string.str_title_time_picker), TimePickerActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_time_selector), TimeSelectoriOSActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_copy_and_paste_textview), CopyAndPasteTextViewActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_material_design_training), MaterialDesignActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_radio_button), RadioGroupActivity.class));
 
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
