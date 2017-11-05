@@ -26,4 +26,11 @@
         <item name="colorControlHighlight">@color/bb_inActiveBottomBarItemColor</item>
         <item name="colorButtonNormal">@android:color/holo_blue_dark</item>
     </style>
+
+    <style name="RidioBtnChecked" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="RidioBtnUnChecked" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textStyle">normal</item>
+    </style>
 </resources>
