@@ -5,35 +5,88 @@
     android:orientation="vertical"
     android:padding="@dimen/large_padding">
 
-
-    <RadioGroup
-        android:id="@+id/mRadioGroup"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:checkedButton="@+id/mRadioBtnAsc"
-        android:divider="@drawable/divider_of_order"
-        android:dividerPadding="@dimen/small_padding"
-        android:orientation="horizontal"
-        android:showDividers="middle">
+        android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/mRadioBtnAsc"
-            android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:button="@null"
             android:padding="@dimen/small_padding"
-            android:text="升序"
-            android:textColor="@android:color/darker_gray"
+            android:text="@string/str_class_native_widget"
             android:textStyle="bold" />
 
-        <RadioButton
-            android:id="@+id/mRadioBtnDesc"
+        <RadioGroup
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:button="@null"
+            android:checkedButton="@+id/mRadioBtnAsc"
+            android:divider="@drawable/divider_of_order"
+            android:dividerPadding="@dimen/small_padding"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:text="升序"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/small_padding"
+                android:text="降序"
+                android:textColor="@android:color/darker_gray" />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:padding="@dimen/small_padding"
-            android:text="降序"
-            android:textColor="@android:color/darker_gray" />
-    </RadioGroup>
+            android:text="@string/str_class_radio_textview_widget"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/mRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/mRadioBtnAsc"
+            android:divider="@drawable/divider_of_order"
+            android:dividerPadding="@dimen/small_padding"
+            android:orientation="horizontal"
+            android:showDividers="middle">
+
+            <RadioButton
+                android:id="@+id/mRadioBtnAsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="@dimen/small_padding"
+                android:text="升序"
+                android:textColor="@android:color/darker_gray"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/mRadioBtnDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@null"
+                android:padding="@dimen/small_padding"
+                android:text="降序"
+                android:textColor="@android:color/darker_gray" />
+        </RadioGroup>
+
+
+    </LinearLayout>
 
 </LinearLayout>

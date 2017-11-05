@@ -13,6 +13,8 @@
     <string name="str_title_copy_and_paste_textview">自由复制粘帖TextView</string>
     <string name="str_title_material_design_training">MATERIAL_DESIGN_TRAINING</string>
     <string name="str_title_radio_button">单选按钮</string>
+    <string name="str_class_native_widget">原生组件</string>
+    <string name="str_class_radio_textview_widget">纯文本RadioButton</string>
     <!-- Android Material Design -->
     <string name="content_bottom_sheet">
 
