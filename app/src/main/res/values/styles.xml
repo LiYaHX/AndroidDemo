@@ -11,7 +11,12 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.AndroidDemo" parent="@style/AppTheme">
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AndroidDemo" parent="@style/AppTheme.NoActionBar">
         <item name="android:windowBackground">@drawable/app_lancher_background</item>
     </style>
 
