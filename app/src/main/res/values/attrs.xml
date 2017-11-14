@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <declare-styleable name="ShimmerView">
-        <attr name="reflectionColor" format="color"/>
+        <attr name="reflectionColor"            format="color"/>
     </declare-styleable>
 
     <!-- LoopViewPager START -->
     <declare-styleable name="LoopViewPager">
-        <attr name="flag_is_need_loop" format="boolean">false</attr>
+        <attr name="flag_is_need_loop"          format="boolean">false</attr>
         <attr name="flag_is_auto_schedule_play" format="boolean">false</attr>
-        <attr name="ratio" format="float">0</attr>
+        <attr name="ratio"                      format="float">0</attr>
     </declare-styleable>
 
     <declare-styleable name="LoopIndicator">
-        <attr name="container_padding_left" format="dimension">0dp</attr>
-        <attr name="container_padding_top" format="dimension">0dp</attr>
-        <attr name="container_padding_right" format="dimension">0dp</attr>
-        <attr name="container_padding_bottom" format="dimension">0dp</attr>
-        <attr name="container_padding" format="dimension">0dp</attr>
+        <attr name="container_padding_left"     format="dimension">0dp</attr>
+        <attr name="container_padding_top"      format="dimension">0dp</attr>
+        <attr name="container_padding_right"    format="dimension">0dp</attr>
+        <attr name="container_padding_bottom"   format="dimension">0dp</attr>
+        <attr name="container_padding"          format="dimension">0dp</attr>
 
-        <attr name="item_padding_left" format="dimension">0dp</attr>
-        <attr name="item_padding_top" format="dimension">0dp</attr>
-        <attr name="item_padding_right" format="dimension">0dp</attr>
-        <attr name="item_padding_bottom" format="dimension">0dp</attr>
-        <attr name="item_padding" format="dimension">0dp</attr>
+        <attr name="item_padding_left"          format="dimension">0dp</attr>
+        <attr name="item_padding_top"           format="dimension">0dp</attr>
+        <attr name="item_padding_right"         format="dimension">0dp</attr>
+        <attr name="item_padding_bottom"        format="dimension">0dp</attr>
+        <attr name="item_padding"               format="dimension">0dp</attr>
 
-        <attr name="items_count" format="integer">0</attr>
+        <attr name="items_count"                format="integer">0</attr>
     </declare-styleable>
     <!-- LoopViewPager END -->
+
+    <declare-styleable name="CustomDrawableTextView">
+        <attr name="left_drawable_scale_radio"      format="float">0</attr>
+        <attr name="top_drawable_scale_radio"       format="float">0</attr>
+        <attr name="right_drawable_scale_radio"     format="float">0</attr>
+        <attr name="bottom_drawable_scale_radio"    format="float">0</attr>
+    </declare-styleable>
 </resources>

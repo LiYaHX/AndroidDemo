@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
 
+import com.robinlee.lee.widget.CustomDrawableTextViewActivity;
 import com.robinlee.material.design.MaterialDesignActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
@@ -52,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
         demos.add(createTaskItem(resources.getString(R.string.str_title_time_selector), TimeSelectoriOSActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_copy_and_paste_textview), CopyAndPasteTextViewActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_radio_button), RadioGroupActivity.class));
-
+        demos.add(createTaskItem(resources.getString(R.string.str_title_custom_drawable_textview), CustomDrawableTextViewActivity.class));
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
 
