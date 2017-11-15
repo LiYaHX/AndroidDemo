@@ -1,7 +1,9 @@
 <resources>
 
     <string name="app_name">AndroidDemo</string>
+    <string name="empty_str"></string>
 
+    <string name="str_title_navigation_drawer_example">全面分析Android的ActionBar和ToolBar</string>
     <string name="str_title_xml_parse">解析XML</string>
     <string name="str_title_shimmer">SHIMMER</string>
     <string name="str_title_zh_cn_shimmer">字体发光</string>
@@ -36,5 +38,11 @@
     <string name="logo_name_apache_2">Apache_scale_1.5</string>
     <string name="logo_name_apache_3">Apache_scale_1.2</string>
     <string name="logo_name_bentley">Bentley</string>
+    <string name="title_activity_navigation_drawer_example">NavigationDrawerExampleActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
 
 </resources>

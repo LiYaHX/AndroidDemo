@@ -8,6 +8,7 @@ import android.widget.ListView;
 
 import com.robinlee.lee.widget.CustomDrawableTextViewActivity;
 import com.robinlee.material.design.MaterialDesignActivity;
+import com.robinlee.material.design.NavigationDrawerExampleActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
@@ -44,7 +45,8 @@ public class MainActivity extends AppCompatActivity {
         List<HashMap<String, Class>> demos = new ArrayList<HashMap<String, Class>>();
 
         Resources resources = getResources();
-        demos.add((HashMap<String, Class>) createTaskItem(resources.getString(R.string.str_title_xml_parse), XmlParserActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_navigation_drawer_example), NavigationDrawerExampleActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_xml_parse), XmlParserActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_shimmer), ShimmerActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_loop_view_pager), LoopViewPagerActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_bottom_navigation), BottomNavigationActivity.class));

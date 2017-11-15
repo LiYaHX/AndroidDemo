@@ -39,7 +39,12 @@
     <style name="RidioBtnChecked" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textStyle">bold</item>
     </style>
+
     <style name="RidioBtnUnChecked" parent="@style/Widget.AppCompat.CompoundButton.RadioButton">
         <item name="android:textStyle">normal</item>
     </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

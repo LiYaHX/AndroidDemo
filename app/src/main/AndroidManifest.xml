@@ -59,13 +59,21 @@
         <activity
             android:name=".StartActivity"
             android:theme="@style/AppTheme.AndroidDemo">
+        </activity>
+        <activity android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden">
+        </activity>
+        <activity
+            android:name="com.robinlee.material.design.NavigationDrawerExampleActivity"
+            android:label="@string/title_activity_navigation_drawer_example"
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"></activity>
     </application>
 
 </manifest>
