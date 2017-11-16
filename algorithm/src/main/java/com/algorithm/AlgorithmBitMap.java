@@ -6,7 +6,7 @@ import java.util.logging.Logger;
 /**
  * Created by RobinLee on 2017/6/15.
  *
- * <p>Bit-Map algorithm, from <<Programming Pearls>>.</p>
+ * <p>Bit-Map algorithm, from <<Programming Pearls>>(《编程珠玑》).</p>
  *
  * <p>左移n位就是乘以2的n次方；右移n位就是除以2的n次方；</p>
  */
