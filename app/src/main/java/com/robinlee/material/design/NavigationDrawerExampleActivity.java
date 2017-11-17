@@ -27,6 +27,7 @@ public class NavigationDrawerExampleActivity extends AppCompatActivity
         setContentView(R.layout.activity_navigation_drawer_example);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
         // 1. 隐藏Toolbar自带TextViewTitle
         getSupportActionBar().setDisplayShowTitleEnabled(false);
 
