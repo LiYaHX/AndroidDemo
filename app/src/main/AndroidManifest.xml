@@ -10,7 +10,13 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
-            android:theme="@style/AppTheme" />
+            android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name="com.robinlee.xmlparser.XmlParserActivity"
             android:screenOrientation="portrait" />
@@ -58,22 +64,16 @@
         <activity android:name="com.robinlee.widget.RadioGroupActivity" />
         <activity
             android:name=".StartActivity"
-            android:theme="@style/AppTheme.AndroidDemo">
-        </activity>
-        <activity android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"
+            android:theme="@style/AppTheme.AndroidDemo"></activity>
+        <activity
+            android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden">
-        </activity>
+            android:windowSoftInputMode="stateAlwaysHidden"></activity>
         <activity
             android:name="com.robinlee.material.design.NavigationDrawerExampleActivity"
             android:label="@string/title_activity_navigation_drawer_example"
-            android:theme="@style/AppTheme.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name="com.robinlee.widget.IntonationLineActivity"></activity>
     </application>
 
 </manifest>

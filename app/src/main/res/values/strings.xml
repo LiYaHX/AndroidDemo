@@ -4,6 +4,7 @@
     <string name="empty_str"></string>
 
     <string name="str_title_navigation_drawer_example">全面分析Android的ActionBar和ToolBar</string>
+    <string name="str_title_intonation_line">音准线</string>
     <string name="str_title_xml_parse">解析XML</string>
     <string name="str_title_shimmer">SHIMMER</string>
     <string name="str_title_zh_cn_shimmer">字体发光</string>

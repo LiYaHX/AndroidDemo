@@ -1,16 +1,14 @@
 package com.robinlee.androiddemo;
 
-import android.app.Activity;
 import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.ListView;
-
 import com.robinlee.lee.widget.CustomDrawableTextViewActivity;
-import com.robinlee.material.design.MaterialDesignActivity;
 import com.robinlee.material.design.NavigationDrawerExampleActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
+import com.robinlee.widget.IntonationLineActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
 import com.robinlee.widget.RadioGroupActivity;
 import com.robinlee.widget.ShimmerActivity;
@@ -46,6 +44,7 @@ public class MainActivity extends AppCompatActivity {
 
         Resources resources = getResources();
         demos.add(createTaskItem(resources.getString(R.string.str_title_navigation_drawer_example), NavigationDrawerExampleActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_intonation_line), IntonationLineActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_xml_parse), XmlParserActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_shimmer), ShimmerActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_loop_view_pager), LoopViewPagerActivity.class));
