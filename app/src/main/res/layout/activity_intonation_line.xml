@@ -7,11 +7,38 @@
     tools:context="com.robinlee.widget.IntonationLineActivity">
 
     <com.robinlee.widget.IntonationLine
-        android:id="@+id/intonationLine"
+        android:id="@+id/mIntonationLine"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mBtnStartDrawLine"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="24dp"
+        android:text="@string/btn_start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/mIntonationLine"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mIntonationLine"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/mBtnStopDrawLine"
+        android:layout_width="135dp"
+        android:layout_height="70dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="12dp"
+        android:text="@string/btn_stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/mBtnStartDrawLine" />
+
+
 </android.support.constraint.ConstraintLayout>

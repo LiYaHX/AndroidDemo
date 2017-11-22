@@ -4,13 +4,17 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
-import android.os.CountDownTimer;
+import android.graphics.PointF;
+import android.os.Handler;
+import android.os.Message;
 import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
+
+import java.util.ArrayList;
+import java.util.Random;
 
 /**
  * Created by robinlee on 2017/11/17.
@@ -19,75 +23,83 @@ import android.view.WindowManager;
 public class IntonationLine extends View {
 
     private static final String TAG = "IntonationLine";
-    private static final int INIT_INTONATION_LINE = 100;
-    private static final int RADIO_OF_INTONATION_LINE = 10;
-    private int widthOfLine = INIT_INTONATION_LINE;
-    private int heightOfIntonationLine;
-    private Context mContext;
-    private int count = 0;
-    private CountDownTimer mCountDownTimer = new CountDownTimer(2000, 200) {
+    private static final int RADIO_OF_INTONATION_LINE   = 10;
+    private int mWidthOfIntonationLine;
+    private int mHeightOfIntonationLine;
+    private int              mLineCount = 0;
+    private static final int MIN_RANDOM = 50;
+    private static final int MAX_RANDOM = 150;
+    private Random           mRandom    = new Random();
+    private int mRandomNum;
 
+    private long mDelayMillis   = 200;    // ms
+    private Handler mHandler    = new Handler(){
         @Override
-        public void onTick(long millisUntilFinished) {
-
-            Log.i(TAG, "millisUntilFinished : " + millisUntilFinished + "; count : " + count);
-            invalidate();
-            count += 1;
+        public void handleMessage(Message msg) {
+            super.handleMessage(msg);
         }
-
+    };
+    private Runnable mRunnable  = new Runnable() {
         @Override
-        public void onFinish() {
-
+        public void run() {
+            invalidate();
+            mHandler.postDelayed(this, mDelayMillis);
+            mLineCount += 1;
         }
     };
 
+    private Paint mNormalPaint = new Paint();
     private Paint mPaint = new Paint();
     static int[] colors = new int[]{
             Color.BLACK,
             Color.DKGRAY,
             Color.GRAY,
             Color.LTGRAY,
-            Color.WHITE,
+            Color.MAGENTA,
             Color.RED,
             Color.GREEN,
             Color.BLUE,
-            Color.YELLOW,
+            Color.GRAY,
             Color.CYAN
     };
-//    static float[] pts      = new float[]{
-//
-//            10.0f, 200.0f, 110.0f, 202.0f,
-//            110.0f, 200.0f, 310.0f, 202.0f,
-//            310.0f, 200.0f, 410.0f, 202.0f,
-//            410.0f, 200.0f, 510.0f, 202.0f
-//    };
 
     public IntonationLine(Context context) {
         super(context);
-        mContext = context;
         setScreenSize(getScreenWith(), getScreenHight());
-        mCountDownTimer.start();
+        initPaint(mPaint);
     }
 
     public IntonationLine(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        mContext = context;
         setScreenSize(getScreenWith(), getScreenHight());
-        mCountDownTimer.start();
+        initPaint(mPaint);
     }
 
     public IntonationLine(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        mContext = context;
         setScreenSize(getScreenWith(), getScreenHight());
-        mCountDownTimer.start();
+        initPaint(mPaint);
     }
 
     public IntonationLine(Context context, @Nullable AttributeSet attrs, int defStyleAttr, int defStyleRes) {
         super(context, attrs, defStyleAttr, defStyleRes);
-        mContext = context;
         setScreenSize(getScreenWith(), getScreenHight());
-        mCountDownTimer.start();
+        initPaint(mPaint);
+    }
+
+    private void initPaint(Paint paint) {
+        paint.setStyle(Paint.Style.STROKE);
+        paint.setAntiAlias(true);                   // 抗锯齿
+        paint.setStrokeWidth(5.0f);                 // 线宽度
+        paint.setStrokeJoin(Paint.Join.ROUND);
+    }
+
+    public void startDrawLine() {
+        mHandler.postDelayed(mRunnable, mDelayMillis);
+    }
+
+    public void stopDrawLine(){
+        mHandler.removeCallbacks(mRunnable);
     }
 
     @Override
@@ -102,46 +114,55 @@ public class IntonationLine extends View {
     }
 
     @Override
+    protected void onSizeChanged(int w, int h, int oldw, int oldh) {
+        super.onSizeChanged(w, h, oldw, oldh);
+    }
+
+    @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
 
-        drawLine(canvas, mPaint, count);
-        Log.i(TAG, "draw() " + count);
-//        mPaint.setColor(colors[0]);
-//        canvas.drawLine(widthOfLine * 0, heightOfIntonationLine, widthOfLine * 1, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[1]);
-//        canvas.drawLine(widthOfLine * 1, heightOfIntonationLine, widthOfLine * 2, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[2]);
-//        canvas.drawLine(widthOfLine * 2, heightOfIntonationLine, widthOfLine * 3, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[3]);
-//        canvas.drawLine(widthOfLine * 3, heightOfIntonationLine, widthOfLine * 4, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[4]);
-//        canvas.drawLine(widthOfLine * 4, heightOfIntonationLine, widthOfLine * 5, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[5]);
-//        canvas.drawLine(widthOfLine * 5, heightOfIntonationLine, widthOfLine * 6, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[6]);
-//        canvas.drawLine(widthOfLine * 6, heightOfIntonationLine, widthOfLine * 7, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[7]);
-//        canvas.drawLine(widthOfLine * 7, heightOfIntonationLine, widthOfLine * 8, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[8]);
-//        canvas.drawLine(widthOfLine * 8, heightOfIntonationLine, widthOfLine * 9, heightOfIntonationLine, mPaint);
-//        mPaint.setColor(colors[9]);
-//        canvas.drawLine(widthOfLine * 9, heightOfIntonationLine, widthOfLine * 10, heightOfIntonationLine, mPaint);
-//          canvas.drawLines(pts, mPaint);
+        drawLine(canvas, mPaint, mLineCount);
     }
+
+    PointF pointInit = new PointF(0.0f, 0.0f);
+    PointF pointStart = new PointF(0.0f, 0.0f);
+    PointF pointStop = new PointF(0.0f, mHeightOfIntonationLine);
+    float offset = 0.0f;
+    ArrayList<Integer> historyRadom = new ArrayList<>();
 
     private void drawLine(Canvas canvas, Paint paint, int count) {
 
+        mNormalPaint.setColor(colors[1]);
+        pointStart.set(0.0f, 0.0f);
+        pointStop.set(0.0f, mHeightOfIntonationLine);
+
         for (int i = 0; i <= count; i++) {
-            paint.setColor(colors[i]);
-            canvas.drawLine(widthOfLine * i, heightOfIntonationLine, widthOfLine * (i + 1), heightOfIntonationLine, mPaint);
+            paint.setColor(colors[i % RADIO_OF_INTONATION_LINE]);
+
+            if (i < count) {
+                mRandomNum = historyRadom.get(i);
+            } else {
+                mRandomNum = mRandom.nextInt(MAX_RANDOM - MIN_RANDOM) + MIN_RANDOM;
+                historyRadom.add(mRandomNum);
+            }
+
+            pointStart.set(pointStop.x, pointStop.y);
+            offset = pointStart.y - mHeightOfIntonationLine;
+            if (offset >= 0) {
+                pointStop.set(pointInit.x + (i + 1) * mWidthOfIntonationLine, mHeightOfIntonationLine - historyRadom.get(i));
+            } else {
+                pointStop.set(pointInit.x + (i + 1) * mWidthOfIntonationLine, mHeightOfIntonationLine + historyRadom.get(i));
+            }
+            canvas.drawLine(pointStart.x - count * 20, pointStart.y, pointStop.x - count * 20, pointStop.y, mPaint);
+            canvas.drawLine(0.0f, mHeightOfIntonationLine, getScreenWith(), mHeightOfIntonationLine, mNormalPaint);
         }
     }
 
     public void setScreenSize(int screenWidth, int screenHeight) {
 
-        widthOfLine = screenWidth / RADIO_OF_INTONATION_LINE;
-        heightOfIntonationLine = screenHeight / 2;
+        mWidthOfIntonationLine = screenWidth / RADIO_OF_INTONATION_LINE;
+        mHeightOfIntonationLine = screenHeight / 2;
 
         invalidate();
     }
@@ -160,13 +181,8 @@ public class IntonationLine extends View {
      * @return
      */
     private DisplayMetrics getDisplayMetrics() {
-
-        if (mContext == null) {
-            return null;
-        }
-
         DisplayMetrics displayMetrics = new DisplayMetrics();
-        ((WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMetrics);
+        ((WindowManager) getContext().getSystemService(Context.WINDOW_SERVICE)).getDefaultDisplay().getMetrics(displayMetrics);
         return displayMetrics;
     }
 

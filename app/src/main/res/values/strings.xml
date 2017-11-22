@@ -46,4 +46,10 @@
 
     <string name="action_settings">Settings</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- button action -->
+    <string name="btn_start">开始</string>
+    <string name="btn_stop">结束</string>
 </resources>
