@@ -15,6 +15,7 @@ import com.robinlee.widget.ShimmerActivity;
 import com.robinlee.widget.TimePickerActivity;
 import com.robinlee.widget.TimeSelectoriOSActivity;
 import com.robinlee.widget.dialog.DialogActivity;
+import com.robinlee.widget.kotlin.dialog.KTDialogActivity;
 import com.robinlee.xmlparser.XmlParserActivity;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -70,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
                 CustomDrawableTextViewActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_dialog),
                 DialogActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_kotlin_dialog),
+                KTDialogActivity.class));
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
 
