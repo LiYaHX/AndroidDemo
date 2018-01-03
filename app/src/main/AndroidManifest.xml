@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".StartActivity"
+            android:theme="@style/AppTheme.AndroidDemo" />
+        <activity
             android:name=".MainActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
@@ -61,19 +64,23 @@
             android:name="com.robinlee.material.design.TextInputLayoutActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name="com.robinlee.widget.RadioGroupActivity" />
-        <activity
-            android:name=".StartActivity"
-            android:theme="@style/AppTheme.AndroidDemo"></activity>
+        <activity android:name="com.robinlee.widget.RadioGroupActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
         <activity
             android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"></activity>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.robinlee.material.design.NavigationDrawerExampleActivity"
             android:label="@string/title_activity_navigation_drawer_example"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name="com.robinlee.widget.IntonationLineActivity"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.robinlee.widget.IntonationLineActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.robinlee.widget.dialog.DialogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
     </application>
 
 </manifest>

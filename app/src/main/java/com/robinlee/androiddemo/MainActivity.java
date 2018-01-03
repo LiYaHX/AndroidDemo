@@ -14,6 +14,7 @@ import com.robinlee.widget.RadioGroupActivity;
 import com.robinlee.widget.ShimmerActivity;
 import com.robinlee.widget.TimePickerActivity;
 import com.robinlee.widget.TimeSelectoriOSActivity;
+import com.robinlee.widget.dialog.DialogActivity;
 import com.robinlee.xmlparser.XmlParserActivity;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -43,18 +44,32 @@ public class MainActivity extends AppCompatActivity {
         List<HashMap<String, Class>> demos = new ArrayList<HashMap<String, Class>>();
 
         Resources resources = getResources();
-        demos.add(createTaskItem(resources.getString(R.string.str_title_navigation_drawer_example), NavigationDrawerExampleActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_intonation_line), IntonationLineActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_xml_parse), XmlParserActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_shimmer), ShimmerActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_loop_view_pager), LoopViewPagerActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_bottom_navigation), BottomNavigationActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_search_view), SearchViewActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_time_picker), TimePickerActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_time_selector), TimeSelectoriOSActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_copy_and_paste_textview), CopyAndPasteTextViewActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_radio_button), RadioGroupActivity.class));
-        demos.add(createTaskItem(resources.getString(R.string.str_title_custom_drawable_textview), CustomDrawableTextViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_navigation_drawer_example),
+                NavigationDrawerExampleActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_intonation_line),
+                IntonationLineActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_xml_parse),
+                XmlParserActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_shimmer),
+                ShimmerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_loop_view_pager),
+                LoopViewPagerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_bottom_navigation),
+                BottomNavigationActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_search_view),
+                SearchViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_time_picker),
+                TimePickerActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_time_selector),
+                TimeSelectoriOSActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_copy_and_paste_textview),
+                CopyAndPasteTextViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_radio_button),
+                RadioGroupActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_custom_drawable_textview),
+                CustomDrawableTextViewActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_dialog),
+                DialogActivity.class));
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
 

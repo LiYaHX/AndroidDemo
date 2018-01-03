@@ -17,6 +17,7 @@
     <string name="str_title_material_design_training">MATERIAL_DESIGN_TRAINING</string>
     <string name="str_title_radio_button">单选按钮</string>
     <string name="str_title_custom_drawable_textview">可设置TextView_Drawable尺寸</string>
+    <string name="str_title_dialog">对话框</string>
     <string name="str_class_native_widget">原生组件</string>
     <string name="str_class_radio_textview_widget">纯文本RadioButton</string>
     <!-- Android Material Design -->
@@ -52,4 +53,45 @@
     <!-- button action -->
     <string name="btn_start">开始</string>
     <string name="btn_stop">结束</string>
+
+    <!-- dialog -->
+    <string name="dialog_type_alert_default">Default_Alert_Dialog</string>
+    <string name="dialog_type_alert_list">Alert_Dialog_List</string>
+    <string name="dialog_type_alert_list_radio">Alert_Dialog_Radio</string>
+    <string name="dialog_type_alert_list_checkbox">Alert_Dialog_CheckBox</string>
+    <string name="dialog_style_type">AlertDialogStyles</string>
+    <string name="alert_dialog_title">DialogTitle</string>
+    <string name="alert_dialog_content">DialogContent</string>
+    <string name="alert_dialog_cancle">Cancel</string>
+    <string name="alert_dialog_ensure">Ensure</string>
+    <string name="custom_dialog_username">Username</string>
+    <string name="custom_dialog_password">Password</string>
+
+    <array name="fruit">
+        <item>banana</item>
+        <item>apple</item>
+        <item>nuts</item>
+        <item>orange</item>
+    </array>
+
+    <array name="theme">
+        <!--<item>Animation_Dialog</item>-->
+        <!--<item>DeviceDefault_ButtonBar_AlertDialog</item>-->
+        <!--<item>DeviceDefault_Light_ButtonBar_AlertDialog</item>-->
+        <!--<item>Holo_ButtonBar_AlertDialog</item>-->
+        <!--<item>Holo_Light_ButtonBar_AlertDialog</item>-->
+        <!--<item>ThemeOverlay_Material_Dialog</item>-->
+        <!--<item>ThemeOverlay_Material_Dialog_Alert</item>-->
+        <item>Theme_DeviceDefault_Dialog</item>
+        <item>Theme_DeviceDefault_Dialog_Alert</item>
+        <item>Theme_DeviceDefault_Light_Dialog</item>
+        <item>Theme_DeviceDefault_Light_Dialog_Alert</item>
+        <item>Theme_Holo_Dialog</item>
+        <item>Theme_Holo_Light_Dialog</item>
+        <item>Theme_Material_Dialog</item>
+        <item>Theme_Material_Dialog_Alert</item>
+        <item>Theme_Material_Light_Dialog</item>
+        <item>Theme_Material_Light_Dialog_Alert</item>
+    </array>
+
 </resources>
