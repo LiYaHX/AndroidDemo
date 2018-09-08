@@ -1,5 +1,8 @@
 package com.design.patterns;
 
+import com.job.interview.TestStaticA;
+import com.job.interview.TestStaticB;
+
 /**
  * Created by robinlee on 2017/11/16.
  *
@@ -12,6 +15,5 @@ public class SingleInstancePattern {
     public static void main(String[] strings){
 
     }
-
 
 }

@@ -19,6 +19,7 @@
     <string name="str_title_custom_drawable_textview">可设置TextView_Drawable尺寸</string>
     <string name="str_title_dialog">对话框</string>
     <string name="str_title_kotlin_dialog">Kotlin对话框</string>
+    <string name="str_title_glow_edges_widget">边缘发光组件</string>
     <string name="str_class_native_widget">原生组件</string>
     <string name="str_class_radio_textview_widget">纯文本RadioButton</string>
     <!-- Android Material Design -->

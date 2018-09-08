@@ -8,6 +8,7 @@ import com.robinlee.lee.widget.CustomDrawableTextViewActivity;
 import com.robinlee.material.design.NavigationDrawerExampleActivity;
 import com.robinlee.widget.BottomNavigationActivity;
 import com.robinlee.widget.CopyAndPasteTextViewActivity;
+import com.robinlee.widget.GlowingEdgesActivity;
 import com.robinlee.widget.IntonationLineActivity;
 import com.robinlee.widget.LoopViewPagerActivity;
 import com.robinlee.widget.RadioGroupActivity;
@@ -73,6 +74,8 @@ public class MainActivity extends AppCompatActivity {
                 DialogActivity.class));
         demos.add(createTaskItem(resources.getString(R.string.str_title_kotlin_dialog),
                 KTDialogActivity.class));
+        demos.add(createTaskItem(resources.getString(R.string.str_title_glow_edges_widget),
+                GlowingEdgesActivity.class));
         mDemosAdapter = new DemosAdapter(MainActivity.this, demos);
     }
 

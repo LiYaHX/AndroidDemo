@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.robinlee.widget.GlowingEdgesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:background="@drawable/ic_btn_selected"
+                android:button="@null"
+                android:checked="true"
+                android:padding="@dimen/normal_padding"
+                android:text="背景发光测试对照对象"
+                android:textColor="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/mAppCompatRadioButtonDianJiu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:button="@null"
+                android:checked="true"
+                android:padding="@dimen/normal_padding"
+                android:text="背景发光测试"
+                android:textColor="@android:color/white" />
+
+            <android.support.v7.widget.AppCompatRadioButton
+                android:id="@+id/mAppCompatRadioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/normal_margin"
+                android:background="@drawable/ic_btn_selected_glow"
+                android:button="@null"
+                android:checked="true"
+                android:padding="@dimen/normal_padding"
+                android:text="背景发光测试非点九图"
+                android:textColor="@android:color/white" />
+
+        </RadioGroup>
+
+        <ImageView
+            android:id="@+id/mImgViewGlowEdge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:background="@mipmap/ic_launcher"
+            android:padding="@dimen/small_padding" />
+
+        <com.robinlee.widget.GlowEdgesView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:padding="@dimen/small_padding"
+            app:light_color="#fff"
+            app:light_radius="10"
+            app:light_src="@mipmap/ic_launcher" />
+
+        <com.robinlee.widget.GlowEdgesView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/normal_margin"
+            app:light_color="#fff"
+            app:light_radius="10"
+            app:light_src="@mipmap/ic_launcher" />
+
+        <com.robinlee.widget.GlowEdgesView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="@dimen/normal_margin"
+            android:padding="@dimen/normal_padding"
+            app:light_color="#fff"
+            app:light_radius="10"
+            app:light_src="@mipmap/ic_launcher" />
+
+    </LinearLayout>
+
+</ScrollView>

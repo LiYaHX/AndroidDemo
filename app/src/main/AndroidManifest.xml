@@ -64,9 +64,10 @@
             android:name="com.robinlee.material.design.TextInputLayoutActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name="com.robinlee.widget.RadioGroupActivity"
+        <activity
+            android:name="com.robinlee.widget.RadioGroupActivity"
             android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
+            android:windowSoftInputMode="stateAlwaysHidden" />
         <activity
             android:name="com.robinlee.lee.widget.CustomDrawableTextViewActivity"
             android:screenOrientation="portrait"
@@ -75,15 +76,19 @@
             android:name="com.robinlee.material.design.NavigationDrawerExampleActivity"
             android:label="@string/title_activity_navigation_drawer_example"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name="com.robinlee.widget.IntonationLineActivity"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateAlwaysHidden"/>
-        <activity android:name="com.robinlee.widget.dialog.DialogActivity"
+        <activity
+            android:name="com.robinlee.widget.IntonationLineActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
-        <activity android:name="com.robinlee.widget.kotlin.dialog.KTDialogActivity"
+        <activity
+            android:name="com.robinlee.widget.dialog.DialogActivity"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity
+            android:name="com.robinlee.widget.kotlin.dialog.KTDialogActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name="com.robinlee.widget.GlowingEdgesActivity"></activity>
     </application>
 
 </manifest>
